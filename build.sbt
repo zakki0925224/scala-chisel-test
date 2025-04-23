@@ -8,8 +8,8 @@ logLevel := Level.Info
 val chiselVersion = "6.6.0"
 
 libraryDependencies ++= Seq(
-    "org.chipsalliance" %% "chisel" % chiselVersion
-    // "org.scalatest"     %% "scalatest" % "3.2.16" % "test"
+    "org.chipsalliance" %% "chisel"     % chiselVersion,
+    "edu.berkeley.cs"   %% "chiseltest" % "6.0.0" % Test
 )
 scalacOptions ++= Seq(
     "-language:reflectiveCalls",
